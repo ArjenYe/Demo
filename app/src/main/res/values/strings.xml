@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">"Ar"</string>
+    <string name="btn_text_add_contact">Add Contact</string>
+    <string name="label_name">Name:</string>
+    <string name="label_phone_num">Phone Num:</string>
+    <string name="btn_text_ok">Ok</string>
+    <string name="btn_text_return">Return</string>
+
+    <!-- home -->
+    <string name="text_auto_dial">Auto Dial</string>
+    <string name="text_capture">Capture</string>
+    <!-- home -->
+
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">Ok</string>
+
+
+    <string name="text_media_recorder">Media Recorder</string>
+    <string name="text_time_pick">Time Pick</string>
+    <string name="text_configuration">Configuration</string>
+    <string name="text_gesture">Gesture</string>
+    <string name="text_wall_paper">Wall Paper</string>
+    <string name="text_web_view">Web View</string>
+    <string name="text_view_flipper">View Flipper</string>
+    <string name="text_light_sensor">Light Sensor</string>
+    <string name="text_vibrator">Vibrator</string>
+    <string name="text_orientation_sensor">Orientation Sensor</string>
+    <string name="text_show_all_sensor">Show All Sensor</string>
+    <string name="text_drawer_menu">Drawer Menu</string>
+    <string name="text_show_time">Show Time</string>
+    <string name="text_hide_toolbar">Hide Toolbar</string>
+    <string name="text_popup_window">Popup Window</string>
+    <string name="text_coordinator_behavior">Coordinator Behavior</string>
+    <string name="text_custom_view">Custom View</string>
+    <string name="text_shake_animation">Shake Animation</string>
+    <string name="text_count_down_time">Down Time</string>
+    <string name="text_auto_search">Auto Search</string>
+    <string name="text_color_selector">Color Selector</string>
+    <string name="text_my_progress">My Progress</string>
+    <string name="text_contact_list_version_one">Contact List Version One</string>
+    <string name="text_contact_list">Contact List</string>
+    <string name="text_check_box">Check Box</string>
+    <string name="text_picture">Picture</string>
+    <string name="text_take_photo">Take photo</string>
+    <string name="text_fetch">Fetch</string>
+    <string name="text_expand">Expand</string>
+    <string name="text_http_request">Http request</string>
+    <string name="text_animation">Animation</string>
+    <string name="text_open_gl">OpenGL</string>
+    <string name="text_foot_animation">Foot Animation</string>
+    <string name="text_my_text_view">My Text View</string>
+    <string name="text_my_contacts">My Contacts</string>
+    <string name="text_dialog_fragment">Dialog Fragment</string>
+    <string name="text_rx_binding">Rx Binding</string>
+    <string name="text_speech_to_text">Speech To Text</string>
+    <string name="text_real_time_database">Real Time Database</string>
+    <string name="text_home_page">Home Page</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

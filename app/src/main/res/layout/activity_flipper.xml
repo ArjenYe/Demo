@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/anim_right_in"
+        android:outAnimation="@anim/anim_left_out">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_arrow_upward_black_24dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_arrow_downward_black_24dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/s_left_jiantou" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/barcode_img" />
+
+    </ViewFlipper>
+
+</LinearLayout>

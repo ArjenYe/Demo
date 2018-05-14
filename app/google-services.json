@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "117600751817",
+    "firebase_url": "https://autodial-6e4a9.firebaseio.com",
+    "project_id": "autodial-6e4a9",
+    "storage_bucket": "autodial-6e4a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117600751817:android:3ef72d35e8caecbf",
+        "android_client_info": {
+          "package_name": "com.example.yeajie.autodial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117600751817-7tk3f5kik6f728im97h9ooovu9o5tpgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yeajie.autodial",
+            "certificate_hash": "d027e81528c2beab16d96da963546404206b107a"
+          }
+        },
+        {
+          "client_id": "117600751817-cfja10lt5ihmbpa0ud37rtd3v8492gdr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Wx6s0wbeQC-dOciYsNhDtM3rPFnPH0I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117600751817-cfja10lt5ihmbpa0ud37rtd3v8492gdr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

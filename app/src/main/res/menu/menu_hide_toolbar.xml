@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_cut"
+        android:icon="@drawable/avd_cut"
+        android:orderInCategory="1"
+        android:title="Cut"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_copy"
+        android:icon="@drawable/avd_copy"
+        android:orderInCategory="1"
+        android:title="Copy"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/avd_delete"
+        android:orderInCategory="1"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/avd_share"
+        android:orderInCategory="1"
+        android:title="Share"
+        app:showAsAction="always" />
+
+</menu>

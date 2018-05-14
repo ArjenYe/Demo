@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yeajie.app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".original.autocall.AddContactActivity" />
+        <activity android:name=".original.autocall.AutoDialActivity" />
+        <activity android:name=".original.camera.CameraActivity" />
+        <activity android:name=".original.recyclerview.fetch.FetchRecyclerActivity" />
+        <activity android:name=".original.recyclerview.expand.ExpandRecyclerActivity" />
+        <activity android:name=".original.http.HttpRequestActivity" />
+        <activity android:name=".original.animation.JsonAnimationActivity" />
+        <activity android:name=".original.opengl.OpenGlActivity" />
+        <activity android:name=".original.mytextview.MyTextViewActivity" />
+        <activity
+            android:name=".original.animation.ImageAnimationActivity"
+            android:theme="@style/ActivityAnimation" />
+        <activity android:name=".original.contacts.MyContactsActivity" />
+        <activity android:name=".original.dialog.DialogFragmentActivity" />
+        <activity android:name=".original.rxbinding.RxBindingActivity" />
+        <activity android:name=".original.speechtotext.SpeechToTextActivity" />
+        <activity android:name=".original.realtimedatabase.RealTimeDatabaseActivity" />
+        <activity
+            android:name=".original.firebase.MainActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".original.firebase.LoginActivity" />
+        <activity android:name=".original.firebase.RegisterActivity" />
+        <activity android:name=".original.picture.PictureActivity" />
+        <activity android:name=".original.checkbox.CheckBoxActivity" />
+        <activity android:name=".original.autocall.contactlist.ContactListActivity" />
+        <activity android:name=".original.autocall1.ContactVersionOneActivity" />
+        <activity android:name=".original.progressbar.MyProgressBarActivity" />
+        <activity android:name=".original.selector.SelectorActivity" />
+        <activity android:name=".original.autosearch.AutoSearchActivity" />
+        <activity android:name=".original.timecountdown.CountDownTimeActivity" />
+        <activity android:name=".original.animation.ShakeAnimationActivity" />
+        <activity android:name=".original.custom.CustomViewActivity" />
+        <activity android:name=".original.coordinator.CoordinatorBehaviorActivity" />
+        <activity android:name=".original.coordinator.search.SearchBehaviorActivity" />
+        <activity android:name=".original.popupwindow.PopupWindowActivity" />
+        <activity android:name=".original.coordinator.toolbar.HideToolbarActivity" />
+        <activity android:name=".original.clock.ShowTimeActivity" />
+        <activity android:name=".original.drawermenu.DrawerMenuActivity" />
+        <activity android:name=".original.sensor.ShowAllSensorActivity" />
+        <activity android:name=".original.sensor.OrientationSensorActivity" />
+        <activity android:name=".original.vibrator.VibratorActivity" />
+        <activity android:name=".original.sensor.LightSensorActivity" />
+        <activity android:name=".original.flipper.FlipperActivity" />
+        <activity android:name=".original.webview.WebViewActivity" />
+        <activity android:name=".original.wallpaper.WallPaperActivity" />
+        <activity android:name=".original.gesture.GestureActivity" />
+        <activity android:name=".original.configuration.ConfigurationActivity" />
+        <activity android:name=".original.timepick.TimePickActivity" />
+        <activity android:name=".original.mediarecorder.MediaRecorderActivity" />
+    </application>
+
+</manifest>
