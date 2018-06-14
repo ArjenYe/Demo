@@ -15,6 +15,9 @@
     <string name="btn_ok">Ok</string>
 
 
+    <string name="text_wave">Wave</string>
+    <string name="text_draw_board">Draw Board</string>
+    <string name="text_bezier">Bezier</string>
     <string name="text_media_recorder">Media Recorder</string>
     <string name="text_time_pick">Time Pick</string>
     <string name="text_configuration">Configuration</string>

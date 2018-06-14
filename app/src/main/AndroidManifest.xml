@@ -98,6 +98,9 @@
         <activity android:name=".original.configuration.ConfigurationActivity" />
         <activity android:name=".original.timepick.TimePickActivity" />
         <activity android:name=".original.mediarecorder.MediaRecorderActivity" />
+        <activity android:name=".original.bezier.BezierActivity" />
+        <activity android:name=".original.bezier.draw.DrawBoardActivity" />
+        <activity android:name=".original.bezier.wave.WaveActivity" />
     </application>
 
 </manifest>
