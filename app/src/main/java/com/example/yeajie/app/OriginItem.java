@@ -41,6 +41,7 @@ import com.example.yeajie.app.original.selector.SelectorActivity;
 import com.example.yeajie.app.original.sensor.LightSensorActivity;
 import com.example.yeajie.app.original.sensor.OrientationSensorActivity;
 import com.example.yeajie.app.original.sensor.ShowAllSensorActivity;
+import com.example.yeajie.app.original.singleton.SingletonActivity;
 import com.example.yeajie.app.original.speechtotext.SpeechToTextActivity;
 import com.example.yeajie.app.original.timecountdown.CountDownTimeActivity;
 import com.example.yeajie.app.original.timepick.TimePickActivity;
@@ -65,6 +66,7 @@ final class OriginItem extends HomeItem {
 
     static List<HomeItem> getItems() {
         List<HomeItem> homeItems = new ArrayList<>();
+        homeItems.add(new OriginItem(R.drawable.ic_phone_forwarded_black_24dp, R.string.text_singleton, SingletonActivity.class));
         homeItems.add(new OriginItem(R.drawable.ic_phone_forwarded_black_24dp, R.string.text_wave, WaveActivity.class));
         homeItems.add(new OriginItem(R.drawable.ic_phone_forwarded_black_24dp, R.string.text_draw_board, DrawBoardActivity.class));
         homeItems.add(new OriginItem(R.drawable.ic_phone_forwarded_black_24dp, R.string.text_bezier, BezierActivity.class));

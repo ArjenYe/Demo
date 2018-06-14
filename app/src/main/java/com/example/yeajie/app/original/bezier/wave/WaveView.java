@@ -88,9 +88,9 @@ public class WaveView extends View {
             }
 
             if (waveUp) {
-                moveToHeight = moveToHeight - 2;
+                moveToHeight--;
             } else {
-                moveToHeight = moveToHeight + 2;
+                moveToHeight++;
             }
 
             invalidate();
