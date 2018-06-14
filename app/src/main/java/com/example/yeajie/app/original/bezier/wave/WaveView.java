@@ -20,6 +20,7 @@ public class WaveView extends View {
     private Paint paint;
     private ValueAnimator animator;
 
+    private int controlOffset = 60;
     private int width = 720;
     private int height = 1184;
     private int levelY = height / 4 * 3;
@@ -28,13 +29,13 @@ public class WaveView extends View {
     private boolean waveUp = true;
 
     private int[] startPoint = {-width, levelY};
-    private int[] control_1 = {-width / 4 * 3, levelY - 20};
+    private int[] control_1 = {-width / 4 * 3, levelY - controlOffset};
     private int[] point1 = {-width / 2, levelY};
-    private int[] control_2 = {-width / 4, levelY + 20};
+    private int[] control_2 = {-width / 4, levelY + controlOffset};
     private int[] point2 = {0, levelY};
-    private int[] control_3 = {width / 4, levelY - 20};
+    private int[] control_3 = {width / 4, levelY - controlOffset};
     private int[] point3 = {width / 2, levelY};
-    private int[] control_4 = {width / 4 * 3, levelY + 20};
+    private int[] control_4 = {width / 4 * 3, levelY + controlOffset};
     private int[] point4 = {width, levelY};
 
     public WaveView(Context context) {
@@ -73,7 +74,7 @@ public class WaveView extends View {
 
     public void startAnim() {
         animator = ValueAnimator.ofInt(0, width);
-        animator.setDuration(2000);
+        animator.setDuration(1000);
         animator.setRepeatCount(ValueAnimator.INFINITE);
         animator.setInterpolator(new LinearInterpolator());
         animator.addUpdateListener(animation -> {
@@ -87,9 +88,9 @@ public class WaveView extends View {
             }
 
             if (waveUp) {
-                moveToHeight--;
+                moveToHeight = moveToHeight - 2;
             } else {
-                moveToHeight++;
+                moveToHeight = moveToHeight + 2;
             }
 
             invalidate();
