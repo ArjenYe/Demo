@@ -7,11 +7,27 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/show_dialog_btn"
+        android:id="@+id/translate_dialog_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Show Dialog" />
+        android:text="Translate Dialog" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/alpha_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Alpha Dialog" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/default_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Default Dialog" />
 
 </LinearLayout>

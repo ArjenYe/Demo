@@ -3,7 +3,7 @@ package com.example.yeajie.app.original.dialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.AppCompatButton;
+import android.view.Gravity;
 
 import com.example.yeajie.app.R;
 
@@ -12,21 +12,31 @@ import com.example.yeajie.app.R;
  */
 
 public class DialogFragmentActivity extends FragmentActivity {
-    private AppCompatButton showDialogBtn;
+    private static final int ANIM_NULL = 0;
+    private static final int ANIM_TRANSLATE = 1;
+    private static final int ANIM_ALPHA = 2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog_fragment);
-        initViewLayout();
 
-        MyDialogFragment myDialogFragment = new MyDialogFragment();
-
-        showDialogBtn.setOnClickListener(view ->
-                myDialogFragment.show(getSupportFragmentManager(), "MyDialogFragment"));
+        findViewById(R.id.default_dialog_btn).setOnClickListener(view ->
+                getDialog(ANIM_NULL).show(getSupportFragmentManager(), "customerDialog"));
+        findViewById(R.id.translate_dialog_btn).setOnClickListener(view ->
+                getDialog(ANIM_TRANSLATE).show(getSupportFragmentManager(), "customerDialog"));
+        findViewById(R.id.alpha_dialog_btn).setOnClickListener(view ->
+                getDialog(ANIM_ALPHA).show(getSupportFragmentManager(), "customerDialog"));
     }
 
-    private void initViewLayout() {
-        showDialogBtn = (AppCompatButton) findViewById(R.id.show_dialog_btn);
+    private CustomDialog getDialog(int anim) {
+        switch (anim) {
+            case ANIM_TRANSLATE:
+                return CustomDialog.newInstance(R.style.dialogBottomStyle, Gravity.BOTTOM);
+            case ANIM_ALPHA:
+                return CustomDialog.newInstance(R.style.dialogAlphaStyle, Gravity.CENTER);
+            default:
+                return CustomDialog.newInstance(0, Gravity.CENTER);
+        }
     }
 }
