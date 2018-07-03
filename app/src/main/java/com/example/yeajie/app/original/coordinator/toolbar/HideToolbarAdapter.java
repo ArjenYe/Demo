@@ -8,7 +8,7 @@ import com.example.yeajie.app.R;
  * @author arjen
  */
 
-class HideToolbarAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
+public class HideToolbarAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
     public HideToolbarAdapter() {
         super(R.layout.item_general_view);
     }

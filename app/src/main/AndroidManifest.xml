@@ -102,6 +102,7 @@
         <activity android:name=".original.bezier.draw.DrawBoardActivity" />
         <activity android:name=".original.bezier.wave.WaveActivity" />
         <activity android:name=".original.singleton.SingletonActivity" />
+        <activity android:name=".original.coordinator.tablayout.TabLayoutActivity" />
     </application>
 
 </manifest>

@@ -46,7 +46,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <!--activity animation end-->
 
-    <!--activity animation end-->
+    <!--dialog animation start-->
     <style name="dialogBottomStyle">
         <item name="android:windowEnterAnimation">@anim/anim_dialog_bottom_enter</item>
         <item name="android:windowExitAnimation">@anim/anim_dialog_bottom_exit</item>
@@ -56,6 +56,6 @@
         <item name="android:windowEnterAnimation">@anim/anim_dialog_alpha_enter</item>
         <item name="android:windowExitAnimation">@anim/anim_dialog_alpha_exit</item>
     </style>
-    <!--activity animation end-->
+    <!--dialog animation end-->
 
 </resources>

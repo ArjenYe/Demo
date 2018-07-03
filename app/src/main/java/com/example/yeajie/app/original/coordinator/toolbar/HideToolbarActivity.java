@@ -1,5 +1,6 @@
 package com.example.yeajie.app.original.coordinator.toolbar;
 
+import android.content.Intent;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -11,9 +12,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.yeajie.app.R;
+import com.example.yeajie.app.original.coordinator.tablayout.TabLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +59,7 @@ public class HideToolbarActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener((adapter1, view, position) ->
-                Toast.makeText(this, adapter.getItem(position), Toast.LENGTH_SHORT).show());
+                startActivity(new Intent(this, TabLayoutActivity.class)));
     }
 
     @Override
