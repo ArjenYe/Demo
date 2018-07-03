@@ -49,10 +49,10 @@ public class HideToolbarActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hide_toolbar);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         initToolBar();
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
+        recyclerView = findViewById(R.id.recycler_view);
 
         collapsingToolbarLayout.setTitle("Hide");
         adapter = new HideToolbarAdapter();

@@ -33,9 +33,9 @@ public class OrientationSensorActivity extends Activity implements SensorEventLi
         orientationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         sensorManager.registerListener(this, orientationSensor, SensorManager.SENSOR_DELAY_UI);
 
-        xPositionTxt = (AppCompatTextView) findViewById(R.id.x_position_txt);
-        yPositionTxt = (AppCompatTextView) findViewById(R.id.y_position_txt);
-        zPositionTxt = (AppCompatTextView) findViewById(R.id.z_position_txt);
+        xPositionTxt = findViewById(R.id.x_position_txt);
+        yPositionTxt = findViewById(R.id.y_position_txt);
+        zPositionTxt = findViewById(R.id.z_position_txt);
     }
 
     @Override

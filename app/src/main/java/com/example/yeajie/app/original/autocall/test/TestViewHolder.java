@@ -4,8 +4,8 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.example.yeajie.app.R;
 import com.example.widget.core.OnItemClick;
+import com.example.yeajie.app.R;
 
 /**
  * @author arjen
@@ -18,7 +18,7 @@ public class TestViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public TestViewHolder(View itemView, OnItemClick onItemClick) {
         super(itemView);
         this.onItemClick = onItemClick;
-        testBtn = (AppCompatButton) itemView.findViewById(R.id.test_btn);
+        testBtn = itemView.findViewById(R.id.test_btn);
         testBtn.setOnClickListener(this);
     }
 

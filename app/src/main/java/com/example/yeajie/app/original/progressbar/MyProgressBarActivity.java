@@ -19,8 +19,6 @@ public class MyProgressBarActivity extends FragmentActivity {
     private static final String COMPLETED = "Completed";
     private ProgressBar progressBar;
     private AppCompatTextView progressTxt;
-    private AppCompatButton startBtn;
-
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -32,6 +30,7 @@ public class MyProgressBarActivity extends FragmentActivity {
             }
         }
     };
+    private AppCompatButton startBtn;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,9 +45,9 @@ public class MyProgressBarActivity extends FragmentActivity {
     }
 
     private void initViewLayout() {
-        progressBar = (ProgressBar) findViewById(R.id.progress_bar);
-        progressTxt = (AppCompatTextView) findViewById(R.id.progress_txt);
-        startBtn = (AppCompatButton) findViewById(R.id.start_btn);
+        progressBar = findViewById(R.id.progress_bar);
+        progressTxt = findViewById(R.id.progress_txt);
+        startBtn = findViewById(R.id.start_btn);
     }
 
     private class ProgressThread extends Thread {

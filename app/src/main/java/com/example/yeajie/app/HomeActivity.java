@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 
 import com.example.widget.util.RecyclerViewItemSpace;
 import com.jakewharton.rxbinding.view.RxView;
-import com.vondear.rxtools.view.popupwindows.tools.RxPopupView;
 
 /**
  * @author arjen
@@ -54,9 +53,9 @@ public class HomeActivity extends Activity {
     }
 
     private void initViewLayout() {
-        originLayout = (LinearLayout) findViewById(R.id.origin_layout);
-        newLayout = (LinearLayout) findViewById(R.id.new_layout);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        originLayout = findViewById(R.id.origin_layout);
+        newLayout = findViewById(R.id.new_layout);
+        recyclerView = findViewById(R.id.recycler_view);
         newLayout.setBackgroundResource(R.color.gray);
     }
 }

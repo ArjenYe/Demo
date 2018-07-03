@@ -6,8 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.yeajie.app.R;
-
 /**
  * @author arjen
  */
@@ -19,8 +17,8 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
 
     public HomeViewHolder(View itemView) {
         super(itemView);
-        itemLayout = (LinearLayout) itemView.findViewById(R.id.item_layout);
-        itemNameTxt = (AppCompatTextView) itemView.findViewById(R.id.item_name_txt);
-        itemImg = (AppCompatImageView) itemView.findViewById(R.id.item_img);
+        itemLayout = itemView.findViewById(R.id.item_layout);
+        itemNameTxt = itemView.findViewById(R.id.item_name_txt);
+        itemImg = itemView.findViewById(R.id.item_img);
     }
 }

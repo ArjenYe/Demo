@@ -17,7 +17,7 @@ public class WaveActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wave);
 
-        WaveView waveView = (WaveView) findViewById(R.id.wave_view);
+        WaveView waveView = findViewById(R.id.wave_view);
         RxView.clicks(findViewById(R.id.start_btn)).subscribe(view -> waveView.startAnim());
         RxView.clicks(findViewById(R.id.stop_btn)).subscribe(view -> waveView.cancelAnim());
     }

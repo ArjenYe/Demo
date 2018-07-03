@@ -20,8 +20,8 @@ public class SelectorActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color_selector);
-        contentLayout = (LinearLayout) findViewById(R.id.content_layout);
-        showStepBtn = (AppCompatButton) findViewById(R.id.show_step_btn);
+        contentLayout = findViewById(R.id.content_layout);
+        showStepBtn = findViewById(R.id.show_step_btn);
 
         contentLayout.setOnClickListener(view -> {
 

@@ -35,13 +35,13 @@ public class RegisterActivity extends Activity {
     private void register() {
         String email = emailEdit.getText().toString();
         if (TextUtils.isEmpty(email)) {
-            ToastUtil.showToast(this,"Input email");
+            ToastUtil.showToast(this, "Input email");
             return;
         }
 
         String password = passwordEdit.getText().toString();
         if (TextUtils.isEmpty(password)) {
-            ToastUtil.showToast(this,"Input password");
+            ToastUtil.showToast(this, "Input password");
             return;
         }
 
@@ -57,8 +57,8 @@ public class RegisterActivity extends Activity {
     }
 
     private void initViewLayout() {
-        emailEdit = (TextInputEditText) findViewById(R.id.email_edit);
-        passwordEdit = (TextInputEditText) findViewById(R.id.password_edit);
-        registerBtn = (AppCompatButton) findViewById(R.id.register_btn);
+        emailEdit = findViewById(R.id.email_edit);
+        passwordEdit = findViewById(R.id.password_edit);
+        registerBtn = findViewById(R.id.register_btn);
     }
 }

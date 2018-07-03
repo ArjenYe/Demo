@@ -25,7 +25,7 @@ public class FlipperActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flipper);
         context = this;
-        viewFlipper = (ViewFlipper) findViewById(R.id.view_flipper);
+        viewFlipper = findViewById(R.id.view_flipper);
 
         gestureDetector = new GestureDetector(this, new GestureListener());
 

@@ -6,8 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.yeajie.app.R;
 import com.example.widget.core.OnItemClick;
+import com.example.yeajie.app.R;
 
 /**
  * @author arjen
@@ -23,10 +23,10 @@ public class RecyclerDialViewHolder extends RecyclerView.ViewHolder implements V
     public RecyclerDialViewHolder(View itemView, OnItemClick onItemClick) {
         super(itemView);
         this.onItemClick = onItemClick;
-        contactItemLayout = (LinearLayout) itemView.findViewById(R.id.contact_item_layout);
-        contactImg = (AppCompatImageView) itemView.findViewById(R.id.contact_img);
-        contactTxt = (AppCompatTextView) itemView.findViewById(R.id.contact_txt);
-        phoneNumTxt = (AppCompatTextView) itemView.findViewById(R.id.phone_num_txt);
+        contactItemLayout = itemView.findViewById(R.id.contact_item_layout);
+        contactImg = itemView.findViewById(R.id.contact_img);
+        contactTxt = itemView.findViewById(R.id.contact_txt);
+        phoneNumTxt = itemView.findViewById(R.id.phone_num_txt);
 
         contactItemLayout.setOnClickListener(this);
     }

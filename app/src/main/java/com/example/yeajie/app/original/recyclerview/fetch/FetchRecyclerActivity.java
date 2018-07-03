@@ -7,8 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.platform.recyclerview.FetchItemEntry;
-import com.example.yeajie.app.R;
 import com.example.widget.util.ToastUtil;
+import com.example.yeajie.app.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ public class FetchRecyclerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fetch_recycler);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         adapter = new FetchRecyclerAdapter();
         initRecyclerView();
         initFetchAdapter();

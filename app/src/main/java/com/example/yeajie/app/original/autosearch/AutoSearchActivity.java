@@ -31,7 +31,7 @@ public class AutoSearchActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_search);
-        queryTextEdit = (AppCompatEditText) findViewById(R.id.query_text_edit);
+        queryTextEdit = findViewById(R.id.query_text_edit);
 
         queryTextEdit.addTextChangedListener(new TextWatcher() {
             @Override

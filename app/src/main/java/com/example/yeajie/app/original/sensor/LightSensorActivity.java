@@ -30,7 +30,7 @@ public class LightSensorActivity extends Activity implements SensorEventListener
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_light_sensor);
-        toOtherViewBtn = (AppCompatButton) findViewById(R.id.to_other_view_btn);
+        toOtherViewBtn = findViewById(R.id.to_other_view_btn);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         powerManager = (PowerManager) getSystemService(POWER_SERVICE);

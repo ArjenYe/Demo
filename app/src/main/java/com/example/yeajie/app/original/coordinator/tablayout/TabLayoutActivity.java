@@ -32,12 +32,12 @@ public class TabLayoutActivity extends AppCompatActivity {
 //        toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        toolbar.setTitle("Test for TabLayout");
 
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Tab-1"));
         tabLayout.addTab(tabLayout.newTab().setText("Tab-2"));
 
         adapter = new HideToolbarAdapter();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
     }

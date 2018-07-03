@@ -17,7 +17,7 @@ public class DrawBoardActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw_board);
 
-        DrawView drawView = (DrawView) findViewById(R.id.draw_view);
+        DrawView drawView = findViewById(R.id.draw_view);
         RxView.clicks(findViewById(R.id.reset_btn)).subscribe(view -> drawView.reset());
     }
 }

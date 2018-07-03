@@ -30,18 +30,18 @@ import java.lang.ref.WeakReference;
  */
 public final class ToastUtils {
 
-    private static final int     COLOR_DEFAULT = 0xFEFFFFFF;
-    private static final Handler HANDLER       = new Handler(Looper.getMainLooper());
+    private static final int COLOR_DEFAULT = 0xFEFFFFFF;
+    private static final Handler HANDLER = new Handler(Looper.getMainLooper());
 
-    private static Toast               sToast;
+    private static Toast sToast;
     private static WeakReference<View> sViewWeakReference;
-    private static int sLayoutId  = -1;
-    private static int gravity    = Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM;
-    private static int xOffset    = 0;
-    private static int yOffset    = (int) (64 * Utils.getApp().getResources().getDisplayMetrics().density + 0.5);
-    private static int bgColor    = COLOR_DEFAULT;
+    private static int sLayoutId = -1;
+    private static int gravity = Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM;
+    private static int xOffset = 0;
+    private static int yOffset = (int) (64 * Utils.getApp().getResources().getDisplayMetrics().density + 0.5);
+    private static int bgColor = COLOR_DEFAULT;
     private static int bgResource = -1;
-    private static int msgColor   = COLOR_DEFAULT;
+    private static int msgColor = COLOR_DEFAULT;
 
     private ToastUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
@@ -210,7 +210,7 @@ public final class ToastUtils {
                 cancel();
                 sToast = Toast.makeText(Utils.getApp(), text, duration);
                 // solve the font of toast
-                TextView tvMessage = (TextView) sToast.getView().findViewById(android.R.id.message);
+                TextView tvMessage = sToast.getView().findViewById(android.R.id.message);
                 TextViewCompat.setTextAppearance(tvMessage, android.R.style.TextAppearance);
                 tvMessage.setTextColor(msgColor);
                 setBgAndGravity();

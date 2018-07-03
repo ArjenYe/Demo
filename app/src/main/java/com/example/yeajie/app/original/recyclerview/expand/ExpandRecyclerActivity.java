@@ -26,7 +26,7 @@ public class ExpandRecyclerActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expand_recycler);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
 
         adapter = new ExpandAdapter(getData());
         adapter.setOnItemChildClickListener((adapter1, view, position) -> {

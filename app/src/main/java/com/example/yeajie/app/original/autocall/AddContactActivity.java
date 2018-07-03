@@ -9,9 +9,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.yeajie.app.R;
-import com.example.widget.util.ToastUtil;
 import com.example.platform.local.DialEntity;
+import com.example.widget.util.ToastUtil;
+import com.example.yeajie.app.R;
 
 /**
  * @author arjen
@@ -29,16 +29,16 @@ public class AddContactActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
 
-        nameEdt = (AppCompatEditText) findViewById(R.id.name_edt);
-        phoneNumEdt = (AppCompatEditText) findViewById(R.id.phone_num_edt);
-        contactAddLayout = (LinearLayout) findViewById(R.id.contact_add_layout);
-        successLayout = (LinearLayout) findViewById(R.id.success_layout);
-        returnBtn = (AppCompatButton) findViewById(R.id.return_btn);
+        nameEdt = findViewById(R.id.name_edt);
+        phoneNumEdt = findViewById(R.id.phone_num_edt);
+        contactAddLayout = findViewById(R.id.contact_add_layout);
+        successLayout = findViewById(R.id.success_layout);
+        returnBtn = findViewById(R.id.return_btn);
 
         contactAddLayout.setVisibility(View.VISIBLE);
         successLayout.setVisibility(View.GONE);
 
-        AppCompatButton okBtn = (AppCompatButton) findViewById(R.id.ok_btn);
+        AppCompatButton okBtn = findViewById(R.id.ok_btn);
         okBtn.setOnClickListener(view -> onAddBtnClick());
         returnBtn.setOnClickListener(view -> finish());
     }

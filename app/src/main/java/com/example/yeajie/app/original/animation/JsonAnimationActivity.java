@@ -6,8 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatButton;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.yeajie.app.R;
 import com.example.widget.util.ToastUtils;
+import com.example.yeajie.app.R;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,9 +26,9 @@ public class JsonAnimationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation);
 
-        animationView = (LottieAnimationView) findViewById(R.id.animation_view);
+        animationView = findViewById(R.id.animation_view);
 
-        AppCompatButton nextBtn = (AppCompatButton) findViewById(R.id.next_btn);
+        AppCompatButton nextBtn = findViewById(R.id.next_btn);
         nextBtn.setOnClickListener(view -> {
             animationIndex++;
             animationView.setAnimation(jsonFileName.get(animationIndex % 3));

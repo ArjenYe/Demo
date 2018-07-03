@@ -22,7 +22,7 @@ public class ImageAnimationActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_anim);
-        footprint1 = (AppCompatImageView) findViewById(R.id.footprint_1);
+        footprint1 = findViewById(R.id.footprint_1);
 
         AnimationSet animationSet = (AnimationSet) AnimationUtils.loadAnimation(this, R.anim.anim_footprint_1);
         footprint1.startAnimation(animationSet);

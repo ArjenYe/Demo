@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
     }
 
     private void initViewLayout() {
-        homePageTxt = (AppCompatTextView) findViewById(R.id.home_page_txt);
-        logoutBtn = (AppCompatButton) findViewById(R.id.logout_btn);
+        homePageTxt = findViewById(R.id.home_page_txt);
+        logoutBtn = findViewById(R.id.logout_btn);
     }
 }

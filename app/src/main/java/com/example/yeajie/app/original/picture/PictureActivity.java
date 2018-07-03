@@ -33,8 +33,6 @@ public class PictureActivity extends Activity {
     private static final int SUCCESS = 0;
     private static final String imgUrl = "http://a.hiphotos.baidu.com/ting/pic/item/96dda144ad345982c1d5272a08f431adcbef842f.jpg";
     private AppCompatImageView imgView1;
-    private AppCompatImageView imgView2;
-
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message message) {
@@ -46,13 +44,14 @@ public class PictureActivity extends Activity {
             }
         }
     };
+    private AppCompatImageView imgView2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picture);
-        imgView1 = (AppCompatImageView) findViewById(R.id.img_view_1);
-        imgView2 = (AppCompatImageView) findViewById(R.id.img_view_2);
+        imgView1 = findViewById(R.id.img_view_1);
+        imgView2 = findViewById(R.id.img_view_2);
 
         //Method 1: OkHttp
         loadPicture();

@@ -23,7 +23,7 @@ public class ShowAllSensorActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_all_sensor);
 
-        AppCompatTextView textTxt = (AppCompatTextView) findViewById(R.id.text_content);
+        AppCompatTextView textTxt = findViewById(R.id.text_content);
         textTxt.setText(getSensor());
     }
 

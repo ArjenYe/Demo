@@ -26,7 +26,7 @@ public class SpeechToTextActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speech_to_text);
-        speechBtn = (AppCompatButton) findViewById(R.id.speech_btn);
+        speechBtn = findViewById(R.id.speech_btn);
         speechBtn.setOnClickListener(view -> doSpeech());
     }
 

@@ -82,11 +82,11 @@ public class RealTimeDatabaseActivity extends FragmentActivity {
     }
 
     private void initViewLayout() {
-        toolbar = (Toolbar) findViewById(R.id.tool_bar);
-        messageTxt = (AppCompatTextView) findViewById(R.id.message_txt);
-        messageInputEdit = (TextInputEditText) findViewById(R.id.message_input_edit);
-        saveBtn = (AppCompatButton) findViewById(R.id.save_btn);
-        getDataBtn = (AppCompatButton) findViewById(R.id.get_data_btn);
-        dataTxt = (AppCompatTextView) findViewById(R.id.data_txt);
+        toolbar = findViewById(R.id.tool_bar);
+        messageTxt = findViewById(R.id.message_txt);
+        messageInputEdit = findViewById(R.id.message_input_edit);
+        saveBtn = findViewById(R.id.save_btn);
+        getDataBtn = findViewById(R.id.get_data_btn);
+        dataTxt = findViewById(R.id.data_txt);
     }
 }

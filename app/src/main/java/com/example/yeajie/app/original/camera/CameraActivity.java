@@ -78,10 +78,10 @@ public class CameraActivity extends Activity {
     }
 
     private void initViewLayout() {
-        toolbar = (Toolbar) findViewById(R.id.tool_bar);
-        pictureImg = (AppCompatImageView) findViewById(R.id.picture_img);
-        captureBtn = (AppCompatButton) findViewById(R.id.capture_btn);
-        takePhotoBtn = (AppCompatButton) findViewById(R.id.take_photo_btn);
+        toolbar = findViewById(R.id.tool_bar);
+        pictureImg = findViewById(R.id.picture_img);
+        captureBtn = findViewById(R.id.capture_btn);
+        takePhotoBtn = findViewById(R.id.take_photo_btn);
     }
 
     private File createPhotoFile() throws IOException {

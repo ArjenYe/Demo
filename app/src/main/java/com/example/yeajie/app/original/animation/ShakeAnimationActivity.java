@@ -104,11 +104,11 @@ public class ShakeAnimationActivity extends FragmentActivity {
     }
 
     private void initViewLayout() {
-        pictureImg = (AppCompatImageView) findViewById(R.id.picture_img);
-        shakeBtn = (AppCompatButton) findViewById(R.id.shake_btn);
-        scaleBtn = (AppCompatButton) findViewById(R.id.scale_btn);
-        alphaBtn = (AppCompatButton) findViewById(R.id.alpha_btn);
-        rotateBtn = (AppCompatButton) findViewById(R.id.rotate_btn);
-        allBtn = (AppCompatButton) findViewById(R.id.all_btn);
+        pictureImg = findViewById(R.id.picture_img);
+        shakeBtn = findViewById(R.id.shake_btn);
+        scaleBtn = findViewById(R.id.scale_btn);
+        alphaBtn = findViewById(R.id.alpha_btn);
+        rotateBtn = findViewById(R.id.rotate_btn);
+        allBtn = findViewById(R.id.all_btn);
     }
 }

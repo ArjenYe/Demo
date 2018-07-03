@@ -58,6 +58,6 @@ public class ContactListActivity extends Activity {
     }
 
     private void initViewLayout() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
     }
 }

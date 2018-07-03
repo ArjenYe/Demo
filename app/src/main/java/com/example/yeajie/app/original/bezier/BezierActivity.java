@@ -44,9 +44,9 @@ public class BezierActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bezier);
-        img = (AppCompatImageView) findViewById(R.id.img);
-        img1 = (AppCompatImageView) findViewById(R.id.img_1);
-        img2 = (AppCompatImageView) findViewById(R.id.img_2);
+        img = findViewById(R.id.img);
+        img1 = findViewById(R.id.img_1);
+        img2 = findViewById(R.id.img_2);
 
         int width = getResources().getDisplayMetrics().widthPixels;
         int height = getResources().getDisplayMetrics().heightPixels;

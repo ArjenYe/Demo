@@ -21,7 +21,7 @@ public class CoordinatorBehaviorActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coordinator_behavior);
 
-        AppCompatButton moveBtn = (AppCompatButton) findViewById(R.id.move_btn);
+        AppCompatButton moveBtn = findViewById(R.id.move_btn);
         moveBtn.setOnTouchListener((view, motionEvent) -> {
             switch (motionEvent.getAction()) {
                 case MotionEvent.ACTION_DOWN:

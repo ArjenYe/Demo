@@ -31,10 +31,10 @@ public class CountDownTimeActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_count_down_time);
-        timerTxt = (AppCompatTextView) findViewById(R.id.timer_txt);
+        timerTxt = findViewById(R.id.timer_txt);
 
         MyCountDown myCountDown = new MyCountDown(60 * 1000, 1000);
-        getCodeBtn = (AppCompatButton) findViewById(R.id.btn_get_code);
+        getCodeBtn = findViewById(R.id.btn_get_code);
         getCodeBtn.setOnClickListener(view -> {
             getCodeBtn.setClickable(false);
             myCountDown.start();

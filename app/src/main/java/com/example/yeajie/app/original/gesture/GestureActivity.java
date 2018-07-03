@@ -22,8 +22,8 @@ public class GestureActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gesture);
-        gestureTxt = (AppCompatTextView) findViewById(R.id.gesture_txt);
-        positionTxt = (AppCompatTextView) findViewById(R.id.position_txt);
+        gestureTxt = findViewById(R.id.gesture_txt);
+        positionTxt = findViewById(R.id.position_txt);
 
         gestureDetector = new GestureDetector(this, new GestureTest());
     }

@@ -20,10 +20,10 @@ public class FetchRecyclerViewHolder extends BaseViewHolder {
 
     public FetchRecyclerViewHolder(View view) {
         super(view);
-        rootLayout = (LinearLayout) view.findViewById(R.id.root_layout);
-        numTxt = (AppCompatTextView) view.findViewById(R.id.num_txt);
-        detailBtn = (AppCompatButton) view.findViewById(R.id.detail_btn);
-        closeBtn = (AppCompatButton) view.findViewById(R.id.close_btn);
+        rootLayout = view.findViewById(R.id.root_layout);
+        numTxt = view.findViewById(R.id.num_txt);
+        detailBtn = view.findViewById(R.id.detail_btn);
+        closeBtn = view.findViewById(R.id.close_btn);
     }
 
 }

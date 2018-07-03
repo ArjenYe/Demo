@@ -39,13 +39,13 @@ public class LoginActivity extends Activity {
     private void login() {
         String email = emailEdit.getText().toString();
         if (TextUtils.isEmpty(email)) {
-            ToastUtil.showToast(this,"Input email");
+            ToastUtil.showToast(this, "Input email");
             return;
         }
 
         String password = passwordEdit.getText().toString();
         if (TextUtils.isEmpty(password)) {
-            ToastUtil.showToast(this,"Input password");
+            ToastUtil.showToast(this, "Input password");
             return;
         }
 
@@ -61,9 +61,9 @@ public class LoginActivity extends Activity {
     }
 
     private void initViewLayout() {
-        emailEdit = (TextInputEditText) findViewById(R.id.email_edit);
-        passwordEdit = (TextInputEditText) findViewById(R.id.password_edit);
-        loginBtn = (AppCompatButton) findViewById(R.id.login_btn);
-        registerTxt = (AppCompatTextView) findViewById(R.id.register_txt);
+        emailEdit = findViewById(R.id.email_edit);
+        passwordEdit = findViewById(R.id.password_edit);
+        loginBtn = findViewById(R.id.login_btn);
+        registerTxt = findViewById(R.id.register_txt);
     }
 }
