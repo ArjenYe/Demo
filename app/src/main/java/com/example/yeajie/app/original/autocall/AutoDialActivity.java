@@ -21,14 +21,14 @@ public class AutoDialActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_dial);
-        final List<HashMap<String, String>> allContactInfo = RxDeviceTool.getAllContactInfo(this);
-        if (allContactInfo != null && allContactInfo.size() > 0) {
-            for (HashMap<String, String> stringStringHashMap : allContactInfo) {
-                for (Map.Entry<String, String> stringStringEntry : stringStringHashMap.entrySet()) {
-                    System.out.println("======== Key:" + stringStringEntry.getKey() + " Value:" + stringStringEntry.getValue());
-                }
-            }
-        }
+//        final List<HashMap<String, String>> allContactInfo = RxDeviceTool.getAllContactInfo(this);
+//        if (allContactInfo != null && allContactInfo.size() > 0) {
+//            for (HashMap<String, String> stringStringHashMap : allContactInfo) {
+//                for (Map.Entry<String, String> stringStringEntry : stringStringHashMap.entrySet()) {
+//                    System.out.println("======== Key:" + stringStringEntry.getKey() + " Value:" + stringStringEntry.getValue());
+//                }
+//            }
+//        }
 
 /*
         getSupportFragmentManager().beginTransaction()
