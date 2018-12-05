@@ -10,6 +10,15 @@ public class DialEntity extends DataSupport {
     private int id;
     private String contact;
     private String phoneNum;
+    private String photoPath;
+
+    public String getPhotoPath() {
+        return photoPath;
+    }
+
+    public void setPhotoPath(String photoPath) {
+        this.photoPath = photoPath;
+    }
 
     public int getId() {
         return id;

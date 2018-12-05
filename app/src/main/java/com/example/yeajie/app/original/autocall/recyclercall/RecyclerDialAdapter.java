@@ -1,14 +1,15 @@
 package com.example.yeajie.app.original.autocall.recyclercall;
 
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.platform.local.DialEntity;
+import com.example.widget.core.OnItemClick;
 import com.example.widget.util.CollectionUtil;
 import com.example.yeajie.app.R;
-import com.example.widget.core.OnItemClick;
-import com.example.platform.local.DialEntity;
 
 import java.util.List;
 
@@ -36,6 +37,7 @@ public class RecyclerDialAdapter extends RecyclerView.Adapter<RecyclerDialViewHo
         DialEntity dialEntity = dialEntities.get(position);
         holder.contactTxt.setText(dialEntity.getContact());
         holder.phoneNumTxt.setText(dialEntity.getPhoneNum());
+        holder.contactImg.setImageBitmap(BitmapFactory.decodeFile(dialEntity.getPhotoPath()));
     }
 
     @Override

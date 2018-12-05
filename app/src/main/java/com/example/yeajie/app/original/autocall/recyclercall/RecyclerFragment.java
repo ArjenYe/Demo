@@ -1,20 +1,24 @@
 package com.example.yeajie.app.original.autocall.recyclercall;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.platform.local.DialEntity;
+import com.example.widget.core.LincBaseFragment;
+import com.example.widget.core.OnItemClick;
+import com.example.widget.util.DividerItemDecoration;
 import com.example.yeajie.app.R;
 import com.example.yeajie.app.original.autocall.AddContactActivity;
 import com.example.yeajie.app.original.autocall.recyclercall.api.RecyclerDialView;
 import com.example.yeajie.app.original.autocall.recyclercall.presenter.RecyclerDialPresenter;
 import com.example.yeajie.app.original.autocall.recyclercall.presenter.RecyclerDialPresenterImpl;
-import com.example.widget.core.LincBaseFragment;
-import com.example.widget.core.OnItemClick;
-import com.example.widget.util.DividerItemDecoration;
-import com.example.platform.local.DialEntity;
 
 import java.util.List;
 
@@ -63,13 +67,24 @@ public class RecyclerFragment extends LincBaseFragment implements RecyclerDialVi
 
     @Override
     public void onItemClick(int position) {
-        DialEntity dialEntity = adapter.getItem(position);
+        if (isGrantCall(getActivity())) {
+            DialEntity dialEntity = adapter.getItem(position);
+            String phoneNum = dialEntity.getPhoneNum();
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setData(Uri.parse("tel:" + phoneNum));
+            startActivity(intent);
+        }
+    }
 
-        String phoneNum = dialEntity.getPhoneNum();
-        Intent intent = new Intent(Intent.ACTION_CALL);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.setData(Uri.parse("tel:" + phoneNum));
-        startActivity(intent);
+    private boolean isGrantCall(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                && activity.checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            activity.requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 2);
+            return false;
+        }
+
+        return true;
     }
 
     private void initRecyclerView() {
