@@ -18,6 +18,7 @@ public class RecyclerDialViewHolder extends RecyclerView.ViewHolder implements V
     protected AppCompatImageView contactImg;
     protected AppCompatTextView contactTxt;
     protected AppCompatTextView phoneNumTxt;
+    protected AppCompatImageView deleteContactImg;
     private OnItemClick onItemClick;
 
     public RecyclerDialViewHolder(View itemView, OnItemClick onItemClick) {
@@ -27,6 +28,7 @@ public class RecyclerDialViewHolder extends RecyclerView.ViewHolder implements V
         contactImg = itemView.findViewById(R.id.contact_img);
         contactTxt = itemView.findViewById(R.id.contact_txt);
         phoneNumTxt = itemView.findViewById(R.id.phone_num_txt);
+        deleteContactImg = itemView.findViewById(R.id.delete_contact_img);
 
         contactItemLayout.setOnClickListener(this);
     }
